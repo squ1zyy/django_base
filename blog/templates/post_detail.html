@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{object_list.object.title}}</title>
+    </head>
+    <body>
+        <style type="text/css">
+            .object-entry {
+                padding-left: 10px;
+            }
+        </style>
+{% block content %}
+    <div class="object-entry">
+        <h2>{{object.title}}</a></h2>
+        <h3>{{ object.author }}</h3>
+        <p>{{ object.content }}</p>
+        <p>{{ object.likes_of_amount }}</p>
+        <p>{{ creation_date }}</p>
+    </div>
+{% endblock content %}
+    </body>
+</html>
